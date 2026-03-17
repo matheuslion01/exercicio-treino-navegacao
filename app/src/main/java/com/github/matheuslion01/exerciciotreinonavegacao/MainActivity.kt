@@ -11,7 +11,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.github.matheuslion01.exerciciotreinonavegacao.screens.LoginScreen
+import com.github.matheuslion01.exerciciotreinonavegacao.screens.MenuScreen
+import com.github.matheuslion01.exerciciotreinonavegacao.screens.PedidosScreen
+import com.github.matheuslion01.exerciciotreinonavegacao.screens.PerfilScreen
 import com.github.matheuslion01.exerciciotreinonavegacao.ui.theme.ExercicioTreinoNavegacaoTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,9 +28,25 @@ class MainActivity : ComponentActivity() {
             ExercicioTreinoNavegacaoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
 
-                    LoginScreen(modifier = Modifier.padding(innerPadding))
+                    val navController = rememberNavController()
 
-
+                    NavHost(
+                        navController = navController,
+                        startDestination = "login",
+                    ) {
+                        composable(route = "login") {
+                            LoginScreen(modifier = Modifier.padding(innerPadding))
+                        }
+                        composable(route = "menu") {
+                            MenuScreen(modifier = Modifier.padding(innerPadding))
+                        }
+                        composable(route = "pedidos") {
+                            PedidosScreen(modifier = Modifier.padding(innerPadding))
+                        }
+                        composable(route = "perfil") {
+                            PerfilScreen(modifier = Modifier.padding(innerPadding))
+                        }
+                    }
                 }
             }
         }
