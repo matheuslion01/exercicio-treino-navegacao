@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.github.matheuslion01.exerciciotreinonavegacao.screens.LoginScreen
 import com.github.matheuslion01.exerciciotreinonavegacao.ui.theme.ExercicioTreinoNavegacaoTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,6 +21,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             ExercicioTreinoNavegacaoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+
+                    LoginScreen(modifier = Modifier.padding(innerPadding))
+
 
                 }
             }
