@@ -1,4 +1,5 @@
 Projeto Kotlin para 1 ponto na GS
+
 Prints do emulador:
 
 <img width="318" height="642" alt="tela inicial" src="https://github.com/user-attachments/assets/1ccc333d-7026-49d7-8b3e-d502e4ed3f1b" />
