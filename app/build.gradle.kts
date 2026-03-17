@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.github.matheuslion01.exerciciotreinonavegacao"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.github.matheuslion01.exerciciotreinonavegacao"
@@ -51,7 +51,6 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation("androidx.navigation:navigation-compose:2.6.0")
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.navigation.compose.jvmstubs)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
