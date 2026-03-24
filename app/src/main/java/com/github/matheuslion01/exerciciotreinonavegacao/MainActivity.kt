@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
                             PedidosScreen(modifier = Modifier.padding(innerPadding), navController)
                         }
                         composable(route = "perfil/{nome}") {
-                            val nome: String? = it.arguments?.getString("nome", "Usuário Genérico")
+                            val nome: String? = it.arguments?.getString("nome", "Roberto Dinamite")
                             PerfilScreen(modifier = Modifier.padding(innerPadding), navController, nome!!)
                         }
                     }
