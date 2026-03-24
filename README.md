@@ -6,9 +6,10 @@ Prints do emulador:
 
 <img width="315" height="642" alt="tela menu" src="https://github.com/user-attachments/assets/929403f7-31fd-44f5-ac6b-c924a809d705" />
 
-<img width="318" height="643" alt="tela perfil" src="https://github.com/user-attachments/assets/ab3c64ff-7ed5-4423-83e7-0288c37ba5a5" />
+<img width="351" height="506" alt="image" src="https://github.com/user-attachments/assets/094467ee-2264-4605-bc03-49c7a957a172" />
 
-<img width="324" height="638" alt="pedidos tela" src="https://github.com/user-attachments/assets/25491b0e-a5de-4186-8862-4e362d4cd1fd" />
+<img width="344" height="502" alt="image" src="https://github.com/user-attachments/assets/93c3a2f8-de87-49bf-b84a-69cd97c62dad" />
+
 
 
 
